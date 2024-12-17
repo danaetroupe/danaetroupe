@@ -1,16 +1,23 @@
+@font-face {
+    font-family: 'Sono';
+    src: url(fonts/Sono-Medium.woff2);
+}
+
 body {
-    font-family: Garamond, serif;
+    font-family: 'Sono';
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #232323;
+    color: #ebebeb;
 }
 
 header {
     padding: 1rem;
     text-align: center;
 }
-
+a {
+    color: #c0e3ab;
+}
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -64,4 +71,14 @@ h1 {
 
 .list a:hover {
     color: #541ab7;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing */
+    gap: 10px; /* Adds space between images */
+}
+.image-container img {
+    width: 30%; /* Adjust width as needed */
+    height: auto;
 }
